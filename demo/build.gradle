@@ -1,9 +1,10 @@
 buildscript {
     repositories {
         mavenCentral()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.2'
     }
 }
 
@@ -15,8 +16,8 @@ repositories {
 apply plugin: 'android'
 
 dependencies {
-    compile 'com.android.support:support-v4:19.0.+'
-    compile project(':library')
+    implement 'com.android.support:support-v4:19.0.+'
+    implement project(':library')
 }
 
 android {

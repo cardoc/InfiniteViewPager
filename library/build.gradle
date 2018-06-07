@@ -4,7 +4,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath 'com.android.tools.build:gradle:3.1.2'
     }
 }
 
@@ -16,8 +16,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 dependencies {
-    compile 'com.android.support:support-v4:27.1.0'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:support-v4:27.1.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 android {
